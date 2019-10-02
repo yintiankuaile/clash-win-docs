@@ -1,2 +1,2 @@
-# Introduction
+# Clash for Windows
 
