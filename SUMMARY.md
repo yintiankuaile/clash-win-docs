@@ -2,7 +2,7 @@
 * [Clash for Windows](README.md)
   * [快速上手](contents/quickstart.md)
   * [配置文件](contents/configfile.md)
-  * [界面介绍]()
+  * [界面介绍](contents/ui.md)
     * [常规 General](contents/ui/general.md)
     * [代理 Proxies](contents/ui/proxies.md)
     * [配置 Profiles](contents/ui/profiles.md)

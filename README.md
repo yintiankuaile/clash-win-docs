@@ -9,6 +9,11 @@
 如无特殊说明，缩写**CFW**指代Clash for Windows
 {% endhint %}
 
+
 ### 赞助商
 
 [![](https://static.modules.world/ad.jpg)](https://my.blinkload.org/auth/register?code=WGiADCjw5cc6P34Ltiks34PvQCH1fnkh)
+
+{% hint style='working' %}
+此文档由Gitbook生成并托管于[Github](https://github.com/Fndroid/clash-win-docs)，由于个人精力有限，欢迎一起参与完善
+{% endhint %}
