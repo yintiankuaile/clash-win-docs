@@ -21,4 +21,5 @@ jobs:
         BASE_BRANCH: master
         BRANCH: gh-pages
         FOLDER: _book
-        BUILD_SCRIPT: npm install gitbook-cli -g && gitbook install && gitbook build  
+        BUILD_SCRIPT: npm install gitbook-cli -g && gitbook install && gitbook build
+        CNAME: docs.cfw.lbyczf.com
