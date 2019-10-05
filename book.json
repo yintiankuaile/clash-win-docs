@@ -1,6 +1,12 @@
 {
   "title": "Clash for Windows",
   "plugins": [
-    "hints"
-  ]
+    "hints",
+    "analytics"
+  ],
+  "pluginsConfig": {
+    "analytics": {
+      "google": "UA-128887007-2"
+    }
+  }
 }
