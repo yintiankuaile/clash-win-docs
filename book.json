@@ -2,11 +2,11 @@
   "title": "Clash for Windows",
   "plugins": [
     "hints",
-    "analytics"
+    "devops"
   ],
   "pluginsConfig": {
-    "analytics": {
-      "google": "UA-128887007-2"
+    "devops": {
+      "google_analytics": "UA-128887007-2"
     }
   }
 }
