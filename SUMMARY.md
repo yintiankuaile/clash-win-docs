@@ -10,6 +10,7 @@
       * [规则](contents/ui/profiles/rules.md)
     * [日志 Logs](contents/ui/logs.md)
     * [反馈 Feedback](contents/ui/feedback.md)
+  * [URL Scheme](contents/urlscheme.md)
   * [绕过系统代理](contents/bypass.md)
   * [便携模式](contents/7z.md)
   * [TAP模式](contents/tap.md)
