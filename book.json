@@ -2,11 +2,15 @@
   "title": "Clash for Windows",
   "plugins": [
     "hints",
-    "ga"
+    "ga",
+    "github"
   ],
   "pluginsConfig": {
     "ga": {
       "token": "UA-128887007-2"
+    },
+    "github": {
+      "url": "https://github.com/Fndroid/clash-win-docs"
     }
   }
 }
