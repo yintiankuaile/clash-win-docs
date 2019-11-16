@@ -22,3 +22,7 @@ dns:
 为避免循环，CFW只会将Fake IP段的请求发往TAP，所以必须要在配置文件中指定``enhanced-mode: fake-ip``
 
 CFW会将系统DNS修改为Clash本地DNS服务器，获取到Fake IP的请求再发送至TAP网卡，这可以让大部分软件正常工作，但如果请求直接使用IP地址而非域名，则不会被发往TAP，例如Telegram
+
+{% hint style='info' %}
+目前TAP模式暂不支持UDP
+{% endhint %}
