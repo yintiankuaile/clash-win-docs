@@ -1,0 +1,11 @@
+{
+  "name": "clash-win-docs",
+  "version": "0.1.0",
+  "dependencies": {
+    "gitbook-cli": "^2.3.2"
+  },
+  "scripts": {
+    "dep": "node node_modules/gitbook-cli/bin/gitbook.js install",
+    "build": "node node_modules/gitbook-cli/bin/gitbook.js build"
+  }
+}
