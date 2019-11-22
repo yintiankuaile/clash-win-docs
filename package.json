@@ -9,6 +9,7 @@
   },
   "scripts": {
     "dep": "node node_modules/gitbook-cli/bin/gitbook.js install",
-    "build": "node node_modules/gitbook-cli/bin/gitbook.js build && echo docs.cfw.lbyczf.com >> _book/CNAME"
+    "build": "node node_modules/gitbook-cli/bin/gitbook.js build && echo docs.cfw.lbyczf.com >> _book/CNAME",
+    "serve": "node node_modules/gitbook-cli/bin/gitbook.js serve"
   }
 }
