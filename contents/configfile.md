@@ -24,6 +24,7 @@ CFW启动的过程会使用到两个配置文件，分别是：
 - cfw-latency-timeout：延迟测试超时时间（毫秒），默认3000
 - cfw-latency-url：延迟测试URL，默认http://www.gstatic.com/generate_204
 - cfw-bypass：系统代理绕过域名或地址，参考 [绕过系统代理](bypass.md)
+- cfw-conn-break-strategy: 切换节点后或切换配置文件后打断连接，参考 [打断连接](breakconn.md)
 
 {% hint style='danger' %}
 此文件关乎Clash核心是否能正常启动，如非必要，请勿更改
