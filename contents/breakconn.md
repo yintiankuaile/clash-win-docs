@@ -8,6 +8,7 @@
 cfw-conn-break-strategy:
   proxy: none              # none/chain/all
   profile: true            # true/false
+  mode: false              # true/false
 ```
 
 ### 选项说明
@@ -19,4 +20,8 @@ cfw-conn-break-strategy:
 
 #### profile
   - true：切换配置前先打断所有连接
+  - false：不打断
+
+#### mode
+  - true：切换代理模式（Direct/Rule/Global）时断开所有连接
   - false：不打断
