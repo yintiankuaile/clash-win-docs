@@ -13,7 +13,7 @@
 - GeoIP Database：GeoIP数据库更新
 - UWP Loopback：UWP应用联网限制解除工具
 - TAP Device：虚拟网卡安装
-- General YML：文本模式编辑基础配置
+- General YAML：文本模式编辑基础配置
 - Theme：切换`亮`/`暗`主题
 - System Proxy：系统代理开关
 - Start with Windows：开机自启动开关

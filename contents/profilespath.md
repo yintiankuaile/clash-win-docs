@@ -6,7 +6,7 @@
 
 ### 配置文件
 
-在 ``config.yml``中添加以下字段: 
+在 ``config.yaml``中添加以下字段: 
 ```yaml
 cfw-profiles-path: 'C:\Users\Administrator\.config\clash\profiles'
 ```

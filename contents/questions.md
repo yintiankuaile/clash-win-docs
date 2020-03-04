@@ -2,7 +2,7 @@
 
 **1. 界面显示不全，无法操作**
 
-删除 Home Directory 下 config.yml 文件并重启软件
+删除 Home Directory 下 config.yaml 文件并重启软件
 如错误依旧，打开 logs 文件夹，选取最新日志文件分析
 
 **2. 升级后提示 xxx not found**

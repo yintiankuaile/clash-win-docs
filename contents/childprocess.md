@@ -3,7 +3,7 @@
 版本0.6.1更新后，加入启动其他第三方应用的能力。可以在CFW启动后自动启动其他软件
 
 ## 使用
-在``Home Directory``目录中``config.yml``文件中加入如下配置：
+在``Home Directory``目录中``config.yaml``文件中加入如下配置：
 ```yaml
 cfw-child-process:
   - command: bark-helper-go.exe  # 程序名称

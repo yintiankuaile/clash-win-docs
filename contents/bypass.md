@@ -6,7 +6,7 @@ Clash for Windows在v 0.4.5 版本后可以自定义系统代理需要绕过的�
 
 ### 设置方式
 
-#### config.yml
+#### config.yaml
 ```yaml
 port: 8888
 socks-port: 8889
