@@ -19,4 +19,4 @@
   * [自定义配置文件目录](contents/profilespath.md)
   * [启动第三方应用](contents/childprocess.md)
   * [自定义状态栏图标](contents/trayicon.md)
-  * [版本常见问题](contents/questions.md)
+  * [自定义应用字体](contents/font.md)
