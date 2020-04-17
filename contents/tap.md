@@ -14,7 +14,7 @@
 dns:
    enable: true
    enhanced-mode: fake-ip # 或 redir-host
-   listen: 127.0.0.1:53
+   listen: 0.0.0.0:53
    nameserver:
       - 223.5.5.5
 experimental:
@@ -37,7 +37,7 @@ experimental:
 dns:
    enable: true
    enhanced-mode: fake-ip
-   listen: 127.0.0.1:53
+   listen: 0.0.0.0:53
    nameserver:
       - 223.5.5.5
 ```
