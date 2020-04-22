@@ -10,13 +10,15 @@
 如无特殊说明，缩写**CFW**指代Clash for Windows
 {% endhint %}
 
-
-### 可爱的广告位
-
-[![](https://github.com/Fndroid/ads/blob/master/ads10.jpg?raw=true)]()
-
-广告位招租啦
-
 {% hint style='working' %}
 此文档由Gitbook生成并托管于[Github](https://github.com/Fndroid/clash-win-docs)，由于个人精力有限，欢迎一起参与完善
 {% endhint %}
+
+
+
+### 推广
+
+<!-- [![](https://api.crhnode.top/banner.png)]() -->
+
+
+<a href="https://aaex.uk/cart.php?language=chinese"><img style="width:100%" src="https://api.crhnode.top/banner.png"></a>
