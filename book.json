@@ -3,7 +3,8 @@
   "plugins": [
     "hints",
     "ga",
-    "github"
+    "github",
+    "favicon"
   ],
   "pluginsConfig": {
     "ga": {
@@ -11,6 +12,9 @@
     },
     "github": {
       "url": "https://github.com/Fndroid/clash-win-docs"
+    },
+    "favicon": {
+      "shortcut": "assets/custom.ico"
     }
   }
 }
