@@ -9,7 +9,7 @@
 
 #### 启动TAP模式
 
-使用的Profile中包含fake-ip设置：
+使用的Profile中包含listen设置：
 ```yaml
 dns:
    enable: true
@@ -17,13 +17,11 @@ dns:
    listen: 0.0.0.0:53
    nameserver:
       - 223.5.5.5
-experimental:
-  interface-name: WLAN # WLAN 为物理网卡名
 ```
 
 #### 工作原理
 
-此版本可以使用interface-name属性避免回环，所以可以不使用fake-ip模式，并且支持了UDP及IP类请求
+此版本可以使用interface-name（自动识别）属性避免回环，所以可以不使用fake-ip模式，并且支持了UDP及IP类请求
 
 ### 0.8.11及以前版本
 
