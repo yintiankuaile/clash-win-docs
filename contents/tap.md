@@ -17,6 +17,8 @@ dns:
    listen: 0.0.0.0:53
    nameserver:
       - 223.5.5.5
+experimental:
+   interface-name: WLAN # 物理网卡名称
 ```
 
 #### 工作原理
