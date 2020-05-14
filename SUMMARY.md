@@ -22,3 +22,4 @@
   * [自定义状态栏图标](contents/trayicon.md)
   * [自定义应用字体](contents/font.md)
   * [自定义节点排序](contents/proxyorder.md)
+  * [自定义请求头](contents/header.md)
