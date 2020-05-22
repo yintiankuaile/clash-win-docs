@@ -22,3 +22,5 @@
 
 
 <a href="https://aaex.uk/cart.php?language=chinese"><img style="width:100%" src="https://api.crhnode.top/banner.png"></a>
+
+<a href="https://sy168.site/auth/register?code=mhjF"><img style="width:100%" src="https://sy168.site/tupian/clash.jpg"></a>
