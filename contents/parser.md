@@ -39,8 +39,8 @@ raw是一个字符串，一般需要用yaml库解析成JavaScript对象
 ##### 工具类对象/方法
 
 包括：
-1. axios：网络请求框架（https://github.com/axios/axios）
-2. yaml：yaml框架（https://github.com/eemeli/yaml）
+1. axios：网络请求框架，[GitHub](https://github.com/axios/axios)
+2. yaml：yaml框架，[GitHub](https://github.com/eemeli/yaml)
 3. notify：发出系统通知方法，签名为``function notify(title:string, message:string, silent:bool)``
 
 #### 返回说明
