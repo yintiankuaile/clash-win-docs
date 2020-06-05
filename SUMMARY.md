@@ -17,6 +17,7 @@
   * [便携模式](contents/7z.md)
   * [TAP模式](contents/tap.md)
   * [Mixin](contents/mixin.md)
+  * [配置文件预处理](contents/parser.md)
   * [自定义配置文件目录](contents/profilespath.md)
   * [启动第三方应用](contents/childprocess.md)
   * [自定义状态栏图标](contents/trayicon.md)
