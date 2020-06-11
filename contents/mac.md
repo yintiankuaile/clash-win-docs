@@ -14,19 +14,19 @@
     enable: true
     enhanced-mode: redir-host
     nameserver:
-      - 1.1.1.1
+      - 1.1.1.1   # 真实请求DNS，可多设置几个
   experimental:
     interface-name: en0 # 出口网卡名称，或者使用下方的自动检测
   tun:
     enable: true
     stack: system
     dns-hijack:            # DNS劫持设置为系统DNS
-      - 114.114.114.114
-      - 223.5.5.5
-      - 8.8.8.8
+      - 114.114.114.114    # 可任意设置，但为了保证CFW关闭后能不影响联网，建议设置真实能访问但DNS服务器
     macOS-auto-route: true
     macOS-auto-detect-interface: false # 自动检测出口网卡
   ```
+3. 系统DNS设置：
+  ![](/assets/mac-system-dns.png)
 
 参考：https://github.com/Dreamacro/clash/releases/tag/premium
 
