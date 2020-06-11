@@ -1,5 +1,18 @@
 ## Clash for Windows
 
+
+### 推广
+
+<!-- [![](https://api.crhnode.top/banner.png)]() -->
+<div style="display: flex; width: 100%; flex-direction: column; align-items: center;">
+    <a href="https://aaex.uk/cart.php?language=chinese" style="width:100%;"><img src="https://api.crhnode.top/banner.png"></a>
+    <a href="https://sy168.site/auth/register?code=mhjF" style="width:100%"><img src="https://sy168.site/tupian/clash.jpg"></a>
+    <a href="https://www.lemonproxy.link/auth/register?code=EnmQ" style="width:100%"><img src="https://www.lemonproxy.link/banner.png"></a>
+</div>
+
+
+
+
 ### 名词
 - Clash：一个Go语言开发的多平台代理客户端，[Github](https://github.com/Dreamacro/clash)
 - ClashX：Clash的Mac图形客户端，[Github](https://github.com/yichengchen/clashX)
@@ -13,14 +26,3 @@
 {% hint style='working' %}
 此文档由Gitbook生成并托管于[Github](https://github.com/Fndroid/clash-win-docs)，由于个人精力有限，欢迎一起参与完善
 {% endhint %}
-
-
-
-### 推广
-
-<!-- [![](https://api.crhnode.top/banner.png)]() -->
-
-
-<a href="https://aaex.uk/cart.php?language=chinese"><img style="width:100%" src="https://api.crhnode.top/banner.png"></a>
-
-<a href="https://sy168.site/auth/register?code=mhjF"><img style="width:100%" src="https://sy168.site/tupian/clash.jpg"></a>
