@@ -11,7 +11,7 @@
 ```yaml
 cfw-profile-parsers:
   - url: https://example.com/profile.yaml
-  - code: |
+    code: |
       module.exports.parse = async (raw, { axios, yaml, notify }) => {
         const obj = yaml.parse(raw)
         return yaml.stringify(obj)
@@ -25,7 +25,7 @@ cfw-profile-parsers:
 ```yaml
 cfw-profile-parsers:
   - url: https://example.com/profile.yaml
-    path: 'C:/Users/cfw/parser.js'
+    file: 'C:/Users/cfw/parser.js'
 ```
 
 
