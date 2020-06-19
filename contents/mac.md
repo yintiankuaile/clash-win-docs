@@ -37,3 +37,11 @@
 {% hint style='info' %}
 dns-hijack不可以劫持局域网地址的DNS，如192.168.0.0/16，请务必手动设置系统DNS
 {% endhint %}
+
+### 跟随系统主题
+
+在config.yaml中加入：
+
+```yaml
+cfw-system-theme: true
+```
