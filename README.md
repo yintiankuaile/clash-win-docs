@@ -12,14 +12,6 @@
     <a href="https://sy168.site/auth/register?code=mhjF" style="height: 150px;">
         <img src="https://sy168.site/tupian/clash.jpg" style="height: 100%; max-width: 690px;" />
     </a>
-    <div style="height: 2px; width: 100%; background-color: #f1f1f1; margin: 5px 0;"></div> 
-    <a href="https://www.lemonproxy.link/auth/register?code=EnmQ" style="height: 150px;">
-        <img src="https://www.lemonproxy.link/banner.png" style="height: 100%; max-width: 690px;" />
-    </a>
-    <!-- <div style="height: 2px; width: 100%; background-color: #f1f1f1; margin: 5px 0;"></div> 
-    <a href="https://dns.nexthud.com/" style="height: 150px;">
-        <img src="http://cfw.wan.sc.cn/cfw.png" style="height: 100%; width: 690px; max-width: 690px;" />
-    </a> -->
 </div>
 
 ### 名词
