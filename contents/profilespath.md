@@ -2,12 +2,12 @@
 
 ### 版本要求
 
-0.8.5版本后，增加``cfw-profiles-path``字段用于自定义``profiles``目录路径（beta）
+0.8.5版本后，支持自定义``profiles``目录路径
 
 ### 配置文件
 
-在 ``config.yaml``中添加以下字段: 
-```yaml
-cfw-profiles-path: 'C:\Users\Administrator\.config\clash\profiles'
-```
+1. 进入Settings界面
+2. 滚动至Profiles栏
+3. 点击Folder Path右边Select按钮
+4. 选择目录
 

@@ -8,15 +8,20 @@
 
 例如：在配置文件中统一添加``dns``字段，操作如下：
 
-在 ``config.yaml``中添加以下字段: 
-```yaml
-cfw-profile-mixin: 
-  dns:
-    enable: true
-    listen: :53
-    nameserver:
-      - 8.8.8.8   
-```
+1. 进入Settings页面
+2. 滚动至Profile Mixin栏
+2. 点击YAML右边Edit小字打开编辑界面
+3. 在修改编辑界面内容为：
+    ```yaml
+    mixin: 
+      dns:
+        enable: true
+        listen: :53
+        nameserver:
+          - 8.8.8.8   
+    ```
+4. 点击编辑器右下角保存
+
 
 在启动或切换配置时，上面内容将会替换到原有配置文件中进行覆盖
 
@@ -33,18 +38,19 @@ cfw-profile-mixin:
 
 0.10.1版本更新后，支持使用JavaScript进行mixin配置，需要传入一个字符串（yaml多行字符串使用``｜``）
 
-```yaml
-cfw-profile-mixin: |
-  module.exports.parse = async ({ content, name, url }, { axios, yaml, notify }) => {
-    const extra = {
-      dns: {
-        enable: true,
-        listen: ':53',
-        namserver: ['8.8.8.8']
-      }
+具体步骤如上，只需要将代码填入JavaScript栏中，并将Type设置成JavaScript即可：
+
+```js
+module.exports.parse = async ({ content, name, url }, { axios, yaml, notify }) => {
+  const extra = {
+    dns: {
+      enable: true,
+      listen: ':53',
+      namserver: ['8.8.8.8']
     }
-    return { ...content, ...extra }
   }
+  return { ...content, ...extra }
+}
 ```
 
 

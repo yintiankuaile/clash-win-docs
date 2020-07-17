@@ -6,12 +6,14 @@
 
 ### 配置文件
 
-
-在 ``config.yaml``中添加以下字段: 
-```yaml
-cfw-http-headers: 
-  token: "123456"  
-  cfw-version: "0.9.11"
-```
+1. 进入Settings界面
+2. 滚动至Profiles栏
+3. 点击Request Headers右边Edit按钮打开编辑器，输入：
+    ```yaml
+    headers: 
+      token: "123456"  
+      cfw-version: "0.9.11"
+    ```
+4. 点击编辑器右下角按钮保存
 
 保存成功后，更新配置文件（包括自动更新）时，CFW所发起的请求将会包含上述定义的字段

@@ -6,14 +6,12 @@
 
 ### 配置文件
 
-在 ``config.yaml``（General中点击Text Mode Edit）中添加以下字段: 
+1. 进入Settings界面
+2. 滚动至Proxies栏
+3. 在Order By右边选择对应排序方式
 
-```yaml
-cfw-proxies-order: default 
-```
+#### 参数说明：
 
-可选参数：
-
-- default：按配置文件定义节点顺序
-- latency：按节点延迟升序排列
-- alphabet：按节点名称字母表排列
+- Default：按配置文件定义节点顺序
+- Latency：按节点延迟升序排列
+- Alphabet：按节点名称字母表排列

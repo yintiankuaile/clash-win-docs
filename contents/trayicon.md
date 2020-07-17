@@ -2,15 +2,13 @@
 
 ### 版本要求
 
-0.8.9版本后，增加``cfw-tray-icon``字段用于自定义状态栏图标
+0.8.9版本后，支持自定义状态栏图标
 
 ### 配置
 
-```yaml
-cfw-tray-icon: 
-  default: C:\Users\abc\custom.ico           # 默认图标
-  system-proxy-on: C:\Users\abc\custom.ico   # 开启系统代理后图标
-```
+1. 进入Settings界面
+2. 滚动至Appearance栏
+3. 在Default Icon Path及System Proxy On Icon Path右边输入栏中输入图标路径
 
 ### ICO文件大小
 

@@ -16,14 +16,6 @@ CFW启动的过程会使用到两个配置文件，分别是：
 
 ![](../assets/configfile1.png)
 
-另外，此文件除了支持Clash全部字段写法外，还额外支持4个CFW特定的字段：
-
-- cfw-latency-timeout：延迟测试超时时间（毫秒），默认3000
-- cfw-latency-url：延迟测试URL，默认http://www.gstatic.com/generate_204
-- cfw-bypass：系统代理绕过域名或地址，参考 [绕过系统代理](bypass.md)
-- cfw-conn-break-strategy: 切换节点后或切换配置文件后打断连接，参考 [打断连接](breakconn.md)
-- cfw-profiles-path: 自定义 profiles 目录路径 (beta), 参考 [自定义配置目录](profilespath.md)
-
 {% hint style='danger' %}
 此文件关乎Clash核心是否能正常启动，如非必要，请勿更改
 {% endhint %}

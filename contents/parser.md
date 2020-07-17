@@ -6,24 +6,28 @@
 
 ### 配置文件
 
-如果需要对下载地址为``https://example.com/profile.yaml``的配置文件进行预处理，则需要在config.yaml文件中添加如下配置：
+如果需要对下载地址为``https://example.com/profile.yaml``的配置文件进行预处理，操作如下：
 
-```yaml
-cfw-profile-parsers:
-  - url: https://example.com/profile.yaml
-    code: |
-      module.exports.parse = async (raw, { axios, yaml, notify }) => {
-        const obj = yaml.parse(raw)
-        return yaml.stringify(obj)
-      }
-```
+1. 进入Settings界面
+2. 滚动至Profiles栏
+3. 点击Parsers右边Edit打开编辑器，填入：
+    ```yaml
+    parsers:
+      - url: https://example.com/profile.yaml
+        code: |
+          module.exports.parse = async (raw, { axios, yaml, notify }) => {
+            const obj = yaml.parse(raw)
+            return yaml.stringify(obj)
+          }
+    ```
+4. 点击编辑器右下角保存按钮
 
 当配置文件触发刷新（包括自动更新）时，CFW会调用此方法对下载的配置文件内容进行处理，再写入本地文件中
 
 当然，parsers也支持使用路径引入代码：
 
 ```yaml
-cfw-profile-parsers:
+parsers:
   - url: https://example.com/profile.yaml
     file: 'C:/Users/cfw/parser.js'
 ```

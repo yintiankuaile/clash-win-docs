@@ -6,10 +6,9 @@
 
 ### 配置文件
 
-在 ``config.yaml``中添加以下字段: 
-```yaml
-cfw-font-family: "Noto Sans TC"   # 系统中存在的字体
-```
+1. 进入Settings界面
+2. 滚动至Appearence栏
+3. 在Font Family右边输入框输入字体名称
 
 {% hint style='info' %}
 注意：新安装字体需要重启软件才会生效
