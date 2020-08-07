@@ -46,7 +46,7 @@ module.exports.parse = async ({ content, name, url }, { axios, yaml, notify }) =
     dns: {
       enable: true,
       listen: ':53',
-      namserver: ['8.8.8.8']
+      nameserver: ['8.8.8.8']
     }
   }
   return { ...content, ...extra }
