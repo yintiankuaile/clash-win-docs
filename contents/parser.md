@@ -89,3 +89,33 @@ raw是一个字符串，一般需要用yaml库解析成JavaScript对象
 #### 返回说明
 
 ``parse``方法需要返回一个字符串，CFW会将返回的字符串存入对应的配置文件中
+
+### 多处理器及正则匹配
+
+#### 正则匹配
+上面例子中，使用``url``匹配配置文件地址，如果一个处理器需要处理多个配置文件，也可以使用正则表达式进行匹配，使用关键字``reg``设置
+
+```yaml
+parsers:
+  - reg: https://test.com.+$  # 正则匹配域名
+    yaml: 
+      prepend-rules:
+        - DOMAIN,test.com,DIRECT
+```
+
+#### 多处理器
+
+parser定义的数组支持多个处理器从上至下按顺序执行，例如：
+
+```yaml
+parsers:
+  - reg: https://test.com.+$   # 第一个执行的parser
+    file: 'C:/Users/cfw/parser.yaml'
+  - url: https://example.com/profile.yaml  # 对上一个parser执行的结果进行处理
+    file: 'C:/Users/cfw/parser.js'
+```
+
+
+{% hint style='info' %}
+file同时支持yaml及js格式的文件
+{% endhint %}
