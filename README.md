@@ -13,7 +13,7 @@
         <img src="https://sy168.site/tupian/clash.jpg" style="" />
     </a>
     <div style="height: 2px; width: 100%; background-color: #f1f1f1; margin: 5px 0;"></div> 
-    <a href="https://u.nu/flclash" style="max-height: 150px; max-width: 690px;">
+    <a href="https://fastlink.ws/auth/register?code=clashw" style="max-height: 150px; max-width: 690px;">
         <img src="http://download.fastlink.ws/fastlink_banner.jpg" style="" />
     </a>
 </div>
