@@ -54,7 +54,7 @@ mix-object|对象|对象合并至原配置最外层中
     parsers:
       - url: https://example.com/profile.yaml
         code: |
-          module.exports.parse = async (raw, { axios, yaml, notify }) => {
+          module.exports.parse = async (raw, { axios, yaml, notify }, { name, url, interval, selected }) => {
             const obj = yaml.parse(raw)
             return yaml.stringify(obj)
           }
@@ -74,7 +74,7 @@ parsers:
 
 #### 参数说明
 
-CFW调用用户定义的``parse``方法时，会传入2个参数，分别是**配置文件文本内容**以及**工具类对象/方法**
+CFW调用用户定义的``parse``方法时，会传入3个参数，分别是**配置文件文本内容**，**工具类对象/方法**以及**配置文件元数据**
 
 ##### 配置文件文本内容
 raw是一个字符串，一般需要用yaml库解析成JavaScript对象
@@ -85,6 +85,14 @@ raw是一个字符串，一般需要用yaml库解析成JavaScript对象
 1. axios：网络请求框架，[GitHub](https://github.com/axios/axios)
 2. yaml：yaml框架，[GitHub](https://github.com/eemeli/yaml)
 3. notify：发出系统通知方法，签名为``function notify(title:string, message:string, silent:bool)``
+
+##### 配置文件元数据
+元数据为JavaScript对象，包括：
+- name：名称
+- url：下载地址
+- interval：更新周期
+- selected：策略组选择缓存，数组
+- mode：模式缓存
 
 #### 返回说明
 
