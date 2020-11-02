@@ -1,6 +1,6 @@
 ## 规则编辑
 
-![Edit Rules](/assets/ui-profiles-rules1.png)
+![](/assets/ui-profiles-rules1.png)
 
 此界面用于增加和删减配置文件中的规则，目前Clash支持的规则类型如下：
 
@@ -17,11 +17,9 @@
 - MATCH：全匹配
 
 {% hint style='info' %}
+使用``PROCESS-NAME``需要 Clash for Windows v0.11.5 及以上版本；规则需要匹配完整的进程名（包括可执行文件后缀）方可生效；该规则不适用于TAP流量
 
-1. 使用``PROCESS-NAME``需要 Clash for Windows v0.11.5 及以上版本；规则需要匹配完整的进程名（包括可执行文件后缀）方可生效；该规则不适用于TAP流量
+用户界面暂不支持添加``RULE-SET``规则，请手动编辑配置文件
 
-2. 用户界面暂不支持添加``RULE-SET``规则，请手动编辑配置文件
-
-3. ``MATCH``需要位于规则列表末尾
-
+``MATCH``需要位于规则列表末尾
 {% endhint %}
