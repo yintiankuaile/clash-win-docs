@@ -54,7 +54,7 @@ mix-object|对象|对象合并至原配置最外层中
     parsers:
       - url: https://example.com/profile.yaml
         code: |
-          module.exports.parse = async (raw, { axios, yaml, notify }, { name, url, interval, selected }) => {
+          module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url, interval, selected }) => {
             const obj = yaml.parse(raw)
             return yaml.stringify(obj)
           }
@@ -82,9 +82,10 @@ raw是一个字符串，一般需要用yaml库解析成JavaScript对象
 ##### 工具类对象/方法
 
 包括：
-1. axios：网络请求框架，[GitHub](https://github.com/axios/axios)
-2. yaml：yaml框架，[GitHub](https://github.com/eemeli/yaml)
-3. notify：发出系统通知方法，签名为``function notify(title:string, message:string, silent:bool)``
+- axios：网络请求框架，[GitHub](https://github.com/axios/axios)
+- yaml：yaml框架，[GitHub](https://github.com/eemeli/yaml)
+- notify：发出系统通知方法，签名为``function notify(title:string, message:string, silent:bool)``
+- console：日志输出至文件，方便调试，在Settings界面中Parser设置下方打开
 
 ##### 配置文件元数据
 元数据为JavaScript对象，包括：
@@ -93,6 +94,8 @@ raw是一个字符串，一般需要用yaml库解析成JavaScript对象
 - interval：更新周期
 - selected：策略组选择缓存，数组
 - mode：模式缓存
+
+**元数据在配置文件首次下载时为空对象**
 
 #### 返回说明
 
