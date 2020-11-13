@@ -41,6 +41,47 @@ prepend-proxy-groups|数组|数组合并至原配置``proxiy-groups``数组**前
 mix-proxy-providers|对象|对象合并至原配置``proxy-providers``中
 mix-rule-providers|对象|对象合并至原配置``rule-providers``中
 mix-object|对象|对象合并至原配置最外层中
+commands|数组|在上面操作完成后执行简单命令操作配置文件
+
+#### Commands使用方法（beta）
+commands是一组简单的命令，作为上面操作的补充
+
+例子:
+
+```yaml
+commands:
+  - dns.enable=false    # 命令1
+  - proxy-groups.0.proxies.0+DIRECT    # 命令2
+```
+
+每个命令可以被分为三个部分，分别是：**定位+操作+设定值**
+
+命令1中，定位是``dns.enable``，操作是``=``，设定值是``false``
+
+命令2中，定位是``proxy-groups.0.proxies.2``，操作是``+``，设定值是``DIRECT``
+
+##### 定位
+定位中每个层级以``.``分割，数组类型的定位下标由0开始计算，命令2中``proxy-groups.0``即表示定位至第1个策略组，``.proxies``表示访问第一个策略组的proxies属性，``.proxies.2``表示proxies属性的第3个位置
+
+##### 操作
+目前支持三种操作：
+- ``=``：覆盖
+- ``+``：插入
+- ``-``：删除
+
+命令1中，``=``表示将``dns``下``enable``的值覆盖为``false``
+
+命令2中，``+``表示在定位的策略组中的``proxies``数组中添加一个名为``DIRECT``的值，原本其他值被向后移动1位。如果此处改成``=``，则会覆盖原来第一个值
+
+##### 设定值
+设定值是用于插入或覆盖的值，如果操作是``-``，则此值可有可无，例如：
+```yaml
+commands:
+  - proxies.0-    # 命令3
+```
+此处可以将配置文件``proxies``的第1个节点删除
+
+如果设定值为纯数字，则会被识别为整数，为``true|false``则识别为布尔类型，如果JSON编码通过则识别为对象
 
 
 ### 进阶方法（JavaScript）
